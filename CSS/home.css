@@ -1,0 +1,104 @@
+/* color: #04FAFA;
+color: #FE20AF; */
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    font-family: 'Roboto Mono', monospace;
+    scroll-snap-align: start;
+    scroll-snap-points-y: repeat(10vh);
+  }
+  .home{
+    background: #212930;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+  }
+  
+  .outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scroll-snap-type: y proximity;
+  }
+
+
+  
+   /* ---- SCROLL BAR ----- */
+
+   .outer-wrapper::-webkit-scrollbar {
+    width: 5px;
+    background: #212930;
+  }
+
+   .outer-wrapper::-webkit-scrollbar-thumb {
+    background: #a8adb4;
+  }
+
+  .outer-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent; 
+    border-radius: 1px;
+}
+
+.title{
+    padding: 2em 4em;
+}
+
+.title_name{
+    font-size: 48px;
+    position: relative;
+    
+}
+
+body > div > div > div.slide.home > section > h1 > span:nth-child(3){
+    font-size: 118px; 
+    top: -14px;
+    left: 168px;;
+    position: absolute;
+}
+
+body > div > div > div.slide.home > section > h1 > span:nth-child(5){
+    font-size: 175px;
+    position: absolute;
+    top: 78px;
+}
+
+
+.short_description{
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+    top: 280px;
+    position: absolute;
+}
+
+body > div > div > div.slide.home > section > h2 > span{
+    font-size: 72px;
+    text-shadow: -3px 1px #ff8181;
+    text-align: center;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 255, 227);
+}
+
+
+.work_portfolio{
+    font-size: 22px;
+    top: 700px;
+    position: absolute;
+    left: 368px;
+    text-decoration-color: rgb(0, 255, 227);
+    text-decoration-thickness: 4px;
+}
+
+
+body > div > div > div.slide.home > section.image > img{
+    border: 6px solid white;
+    height: 70vh;
+    position: absolute;
+    top: 120px;
+}

@@ -1,0 +1,30 @@
+*{
+    cursor: url("Untitled.png"), auto;
+    color: #ffffff;
+   
+  }
+  
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
+  .slide {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+
+.two{
+  background: #d2d6d9;
+  scroll-snap-align: start;
+}
+
+.three{
+  background: #212930;
+  scroll-snap-align: start;
+}
+
+.four{
+  background: #d2d6d9;
+  scroll-snap-align: start;
+}
